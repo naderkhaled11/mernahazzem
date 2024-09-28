@@ -6,17 +6,12 @@
     <title>Merna Hazem - The Bridal Guru</title>
     <!-- إضافة الخطوط -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Tahoma:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Verdana:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
         body {
             margin: 0;
-            font-family: var(--font-style, 'Cairo'), sans-serif; /* استخدام الخط المختار */
+            font-family: 'Cairo', sans-serif;
             background-color: #f8f3f0;
             scroll-behavior: smooth;
         }
@@ -37,30 +32,15 @@
 
         .navbar a {
             text-decoration: none;
-            color: var(--navbar-color, #333);
+            color: #333;
             margin: 0 15px;
             font-size: 1.2em;
             font-weight: 700;
         }
 
-        .social-icons {
-            margin-top: 20px;
-        }
-
-        .social-icons a {
-            color: var(--social-icon-color, #333);
-            margin: 0 15px;
-            font-size: 2.5em;
-            transition: color 0.3s;
-        }
-
-        .social-icons a:hover {
-            color: var(--social-icon-hover-color, #ff4081);
-        }
-
         .hero {
             height: 100vh;
-            background-image: url('default-background.jpg'); /* صورة افتراضية */
+            background-image: url('your-background-image.jpg'); /* تغيير رابط الصورة الخلفية حسب الحاجة */
             background-size: cover;
             background-position: center;
             display: flex;
@@ -75,18 +55,31 @@
         .hero h1 {
             font-size: 5em;
             margin: 0;
-            color: var(--main-color, #ff69b4);
+            color: #ff69b4;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-            letter-spacing: 0.3em;
-            white-space: nowrap;
         }
 
         .hero h2 {
             font-size: 2.5em;
             font-style: italic;
             margin-top: 10px;
-            color: var(--sub-title-color, #fff);
+            color: #fff;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #333;
+            margin: 0 15px;
+            font-size: 2.5em;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #ff4081;
         }
 
         /* الأقسام */
@@ -94,6 +87,7 @@
             padding: 100px 50px;
             text-align: center;
             background: #fff;
+            margin-top: 50px; /* إضافة مسافة بين الأقسام */
         }
 
         #about {
@@ -122,90 +116,52 @@
 <body>
     <!-- شريط التنقل -->
     <div class="navbar">
-        <div class="logo" id="logo-text">Merna Hazem</div>
+        <div class="logo">Merna Hazem</div>
         <div class="menu">
-            <a href="#hero" id="nav-home">الرئيسية</a>
-            <a href="#about" id="nav-about">من نحن</a>
-            <a href="#services" id="nav-services">خدماتنا</a>
-            <a href="#contact" id="nav-contact">تواصل معنا</a>
+            <a href="#hero">الرئيسية</a>
+            <a href="#about">من نحن</a>
+            <a href="#services">خدماتنا</a>
+            <a href="#contact">تواصل معنا</a>
         </div>
     </div>
 
     <!-- قسم العنوان الرئيسي -->
     <div class="hero" id="hero">
-        <h1 data-aos="fade-up" id="main-title">M E R N A &nbsp; H A Z E M</h1>
-        <h2 data-aos="fade-up" data-aos-delay="500" id="sub-title">The Bridal Guru</h2>
+        <h1>M E R N A H A Z E M</h1>
+        <h2>The Bridal Guru</h2>
         
         <!-- أيقونات التواصل الاجتماعي -->
         <div class="social-icons">
-            <a href="#" target="_blank" id="tiktok-link"><i class="fab fa-tiktok"></i></a>
-            <a href="#" target="_blank" id="instagram-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@mernahazeem" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/merna.hazim" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
 
     <!-- قسم من نحن -->
-    <div class="section" id="about" data-aos="fade-right">
-        <h2 id="about-title">من نحن</h2>
-        <p id="about-content">نحن نهتم بتحقيق أحلامك وجعل يومك الخاص أكثر تألقًا وفخامة من خلال تنظيم أفراح وحفلات بأعلى مستوى من الجودة والإبداع.</p>
+    <div class="section" id="about">
+        <h2>من نحن</h2>
+        <p>نحن نهتم بتحقيق أحلامك وجعل يومك الخاص أكثر تألقًا وفخامة من خلال تنظيم أفراح وحفلات بأعلى مستوى من الجودة والإبداع.</p>
     </div>
 
     <!-- قسم الخدمات -->
-    <div class="section" id="services" data-aos="fade-left">
-        <h2 id="services-title">خدماتنا</h2>
-        <p id="services-content">نقدم مجموعة متنوعة من خدمات تنظيم الحفلات، من تصميم الديكور إلى تنسيق الزهور، لضمان تجربة فريدة من نوعها.</p>
+    <div class="section" id="services">
+        <h2>خدماتنا</h2>
+        <p>نقدم مجموعة متنوعة من خدمات تنظيم الحفلات، من تصميم الديكور إلى تنسيق الزهور، لضمان تجربة فريدة من نوعها.</p>
     </div>
 
     <!-- قسم تواصل معنا -->
-    <div class="section" id="contact" data-aos="fade-up">
-        <h2 id="contact-title">تواصل معنا</h2>
-        <div class="contact-form">
-            <p id="contact-content">للحجز والاستفسار، تواصل معنا عبر الهاتف: 01114508296 أو عبر البريد الإلكتروني: mernahazem97@icloud.com</p>
-        </div>
+    <div class="section" id="contact">
+        <h2>تواصل معنا</h2>
+        <p>للحجز والاستفسار، تواصل معنا عبر الهاتف: 01114508296 أو عبر البريد الإلكتروني: mernahazem97@icloud.com</p>
     </div>
 
     <!-- تذييل الصفحة -->
     <footer>
-        <p id="footer-content">جميع الحقوق محفوظة © Merna Hazem - The Bridal Guru 2024</p>
+        <p>جميع الحقوق محفوظة © Merna Hazem - The Bridal Guru 2024</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        // استقبال البيانات من صفحة التحكم وتحديث الصفحة الرئيسية
-        window.onload = () => {
-            const urlParams = new URLSearchParams(window.location.search);
-
-            // تحديث الخلفية
-            const bgImage = urlParams.get('bgImage');
-            if (bgImage) document.querySelector('.hero').style.backgroundImage = `url('${bgImage}')`;
-
-            // تحديث النصوص
-            document.getElementById('main-title').innerText = urlParams.get('title') || 'M E R N A H A Z E M';
-            document.getElementById('sub-title').innerText = urlParams.get('subtitle') || 'The Bridal Guru';
-            document.getElementById('logo-text').innerText = urlParams.get('logoText') || 'Merna Hazem';
-            document.getElementById('about-title').innerText = urlParams.get('aboutTitle') || 'من نحن';
-            document.getElementById('about-content').innerText = urlParams.get('aboutContent') || 'نحن نهتم بتحقيق...';
-            document.getElementById('services-title').innerText = urlParams.get('servicesTitle') || 'خدماتنا';
-            document.getElementById('services-content').innerText = urlParams.get('servicesContent') || 'نقدم مجموعة متنوعة من...';
-            document.getElementById('contact-title').innerText = urlParams.get('contactTitle') || 'تواصل معنا';
-            document.getElementById('contact-content').innerText = urlParams.get('contactContent') || 'للحجز والاستفسار...';
-            document.getElementById('footer-content').innerText = urlParams.get('footerContent') || 'جميع الحقوق محفوظة...';
-
-            // تحديث الروابط
-            document.getElementById('tiktok-link').href = urlParams.get('tiktokLink') || '#';
-            document.getElementById('instagram-link').href = urlParams.get('instagramLink') || '#';
-
-            // تحديث الألوان
-            document.documentElement.style.setProperty('--main-color', urlParams.get('mainColor') || '#ff69b4');
-            document.documentElement.style.setProperty('--sub-title-color', urlParams.get('subTitleColor') || '#fff');
-            document.documentElement.style.setProperty('--navbar-color', urlParams.get('navbarColor') || '#333');
-            document.documentElement.style.setProperty('--social-icon-color', urlParams.get('socialIconColor') || '#333');
-            document.documentElement.style.setProperty('--social-icon-hover-color', urlParams.get('socialIconHoverColor') || '#ff4081');
-
-            // تحديث الخط
-            const fontStyle = urlParams.get('fontStyle') || 'Cairo';
-            document.documentElement.style.setProperty('--font-style', fontStyle);
-        };
-
         // تفعيل مكتبة AOS
         AOS.init();
     </script>
